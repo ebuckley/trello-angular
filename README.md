@@ -1,6 +1,6 @@
 # TrelloSow
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
+This is a simple example app using the trello api to request all cards from a board, then displaying them in a simple report
 
 ## Development server
 

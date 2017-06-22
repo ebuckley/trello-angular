@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+  font-family: 'Slabo 27px', serif;
+  line-height: 1.9rem;
+}
+
+input.ng-valid {
+  border: 1px solid olivedrab;
+}
+input.ng-invalid {
+  border: 1px solid red;
+}
+
+* {
+  color: #323232;
+}
+
+a {
+  color: olivedrab;
+}
+a:hover {
+  color: orange;
+  cursor: pointer;
+}

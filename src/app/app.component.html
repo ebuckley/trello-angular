@@ -1,3 +1,22 @@
 <h1>
   {{title}}
 </h1>
+
+<section class='main-section'>
+  <label for="board-id">
+    Board Id
+    <input [formControl]="boardId" name="board-id" type="text">
+    <eb-error [error]="boardId.errors"></eb-error>
+  </label>
+  <button (click)="generateReport()">Generate</button>
+</section>
+
+<section *ngIf='boardData'>
+  <div *ngFor="let b of boardData;">
+    <h3>{{b.name}}</h3>
+    <eb-markdown [data]="b.desc"></eb-markdown>
+    <div>
+      Tech details: <a href="{{b.url}}"> {{b.url}}</a>
+    </div>
+  </div>
+  </section>
